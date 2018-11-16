@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import fetchTodo from './api/todo';
+import SimpleButton from './button';
 
 class App extends Component {
 	constructor(props) {
@@ -31,6 +32,7 @@ class App extends Component {
 					>
 						Learn React
 					</a>
+					<SimpleButton primary />
 				</header>
 			</div>
 		);
