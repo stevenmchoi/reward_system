@@ -12,8 +12,9 @@ class App extends Component {
 		};
 	}
 
-	componentDidMount() {
-		fetchTodo().then((res) => this.setState({ todo: JSON.stringify(res) }));
+	async componentDidMount() {
+		const res = await fetchTodo();
+		this.setState({ todo: res });
 	}
 
 	render() {

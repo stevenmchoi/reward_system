@@ -1,11 +1,7 @@
 import fetch from 'unfetch';
 
-// export default () => {
-// 	fetch('https://jsonplaceholder.typicode.com/todos/1')
-// 		.then((r) => r.json())
-// 		.then((data) => {
-// 			return data;
-// 		});
-// };
+export default async () => {
+	let res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 
-export default () => fetch('https://jsonplaceholder.typicode.com/todos/1');
+	return JSON.stringify(res);
+};
