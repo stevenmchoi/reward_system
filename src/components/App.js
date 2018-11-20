@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import fetchTodo from './api/todo';
+import logo from '../logo.svg';
+import '../stylesheets/App.css';
+import fetchTodo from '../api/todo';
 import SimpleButton from './button';
 
 class App extends Component {
