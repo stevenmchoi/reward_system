@@ -1,0 +1,13 @@
+{
+  "users": [{
+      "id": "1",
+      "phoneNumber": "5555555555",
+      "score": 0
+    },
+    {
+      "id": "2",
+      "phoneNumber": "4445556666",
+      "score": 0
+    }
+  ]
+}
