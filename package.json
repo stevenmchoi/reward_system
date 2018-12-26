@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node ./server/server.js",
+    "dev": "nodemon ./server/server.js",
     "json:server": "json-server --watch db/db.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -20,6 +20,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",

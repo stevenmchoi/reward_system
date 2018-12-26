@@ -12,6 +12,7 @@ app.use(
 	})
 );
 
-app.listen(3000, () => {
+app.listen(4000, (args) => {
 	console.log('Listening');
+	console.log('args:', args);
 });
