@@ -1,6 +1,12 @@
 const graphql = require('graphql');
 const axios = require('axios');
-const { GraphQLObjectType, GraphQLString, GraphQLList } = graphql;
+const {
+	GraphQLObjectType,
+	GraphQLString,
+	GraphQLList,
+	GraphQLNonNull,
+	GraphQLID,
+} = graphql;
 
 const UserType = require('./user_type');
 
@@ -15,9 +21,9 @@ const RootQuery = new GraphQLObjectType({
 			},
 		},
 		user: {
+			// for getUser and getPoints
 			type: UserType,
-			// args: { id: { type: GraphQLID } },
-			args: { id: { type: GraphQLString } },
+			args: { id: { type: new GraphQLNonNull(GraphQLID) } },
 			resolve(parentValue, { id }) {
 				return axios
 					.get(`http://localhost:3000/users/${id}`)

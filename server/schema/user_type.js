@@ -4,8 +4,7 @@ const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLInt } = graphql;
 const UserType = new GraphQLObjectType({
 	name: 'User',
 	fields: {
-		// id: { type: GraphQLID },
-		id: { type: GraphQLString },
+		id: { type: GraphQLID },
 		phoneNumber: { type: GraphQLString },
 		score: { type: GraphQLInt },
 	},

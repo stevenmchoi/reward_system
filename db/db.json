@@ -1,5 +1,6 @@
 {
-  "users": [{
+  "users": [
+    {
       "id": "1",
       "phoneNumber": "5555555555",
       "score": 0
@@ -8,6 +9,31 @@
       "id": "2",
       "phoneNumber": "4445556666",
       "score": 0
+    },
+    {
+      "phoneNumber": "Ben",
+      "score": 10,
+      "id": "n1CFxKH"
+    },
+    {
+      "phoneNumber": "1238976",
+      "score": 100,
+      "id": "_lSW2ku"
+    },
+    {
+      "phoneNumber": "1238976",
+      "score": 0,
+      "id": "3KcthQi"
+    },
+    {
+      "phoneNumber": "1238976",
+      "score": 100,
+      "id": "Ty2vtEu"
+    },
+    {
+      "phoneNumber": "1238976",
+      "score": 100,
+      "id": "BATgRgN"
     }
   ]
 }
