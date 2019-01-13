@@ -27,7 +27,7 @@ const mutation = new GraphQLObjectType({
 					.then((res) => res.data);
 			},
 		},
-		addPoints: {
+		updatePoints: {
 			type: UserType,
 			args: {
 				id: { type: new GraphQLNonNull(GraphQLID) },
